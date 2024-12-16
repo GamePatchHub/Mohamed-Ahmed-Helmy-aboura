@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محمد أحمد حلمي</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            background: linear-gradient(-45deg, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #9400D3);
+            background-size: 400% 400%;
+            animation: rainbowBackground 20.33s ease infinite;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        @keyframes rainbowBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .container {
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+            overflow-y: auto; /* إضافة شريط التمرير العمودي */
+            max-height: 90vh; /* الحد من ارتفاع الحاوية */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            color: #2a5298;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+            margin: 10px 0;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #1e3c72;
+        }
+        .email {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #1e3c72;
+            text-decoration: none;
+            display: inline-block;
+            border: 2px solid #1e3c72;
+            padding: 5px 10px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .email:hover {
+            background-color: #1e3c72;
+            color: #fff;
+        }
+        img {
+            max-width: 25%; /* تصغير الصورة إلى الربع */
+            height: auto;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        /* إضافة شريط التمرير الملون */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #9400D3);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mohamed Ahmed Helmy</h1>
+        <img src="462551877_1236097960946014_4950144546463955694_n.jpg" alt="الصورة الشخصية">
+        <p><span class="highlight">الاسم:</span> محمد احمد حلمي السيد احمد</p>
+        <p><span class="highlight">تاريخ الميلاد:</span> 16 - 7 - 2011</p>
+        <p><span class="highlight">الوظيفة:</span> طالب مصري</p>
+        <p><span class="highlight">مكان الإقامة:</span> يعيش في قرية صغيرة من قرى محافظة الشرقية والتي تسمى "أبونجاح"</p>
+        <p><span class="highlight">المرحلة الدراسية:</span> في 2025 في المرحلة الثانية الإعدادية</p>
+        <p><a class="email" href="mailto:mh3976698@gmail.com">  البريد الالكتروني : mh3976698@gmail.com </a></p>
+    </div>
+</body>
+</html>
